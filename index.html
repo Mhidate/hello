@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofolio Saya</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/formmail.css">
+</head>
+<body>
+	<header>
+		<h1 class="h1">Halaman Portofolio</h1>
+	</header>
+	
+	<main>
+		<section id="img">
+            <img src="img/tentang.jpg" width="300" height="400">
+		</section>
+		
+		<section id="about">
+			<h2>Tentang Saya</h2>
+			<p>Selamat datang di halaman portofolio saya! Saya adalah seorang yang bersemangat dan berdedikasi dalam mengembangkan keterampilan yang saya miliki di bidang teknologi informasi.</p><br>
+			<p>Saya percaya bahwa dalam dunia teknologi informasi, belajar adalah proses yang berkelanjutan, dan saya selalu berusaha untuk terus belajar dan mengikuti perkembangan dalam keterampilan saya.</p><br>
+			<p>Terima kasih telah meluangkan waktu untuk mengunjungi halaman portofolio saya. Jika Anda ingin tahu lebih banyak tentang saya, silahkan klik beberapa pilihan icon platform yang tersedia.</p>
+		</section>
+		
+		<section id="project">
+			<h2>Aplikasi yang pernah Saya buat</h2>
+			<div class="project">
+				<h3>Website Checkpoint</h3>
+				<p>Website ini di bangun untuk menyelesaikan tugas akhir atau skripsi saya (Bagian hardware di kerjakan oleh partner saya rida zaimus yang saat itu juga sedang mengerjakan tugas 
+					akhir /skripsi).Teknologi yang di gunkanan untuk membangun website ini adalah php native,css,html,javascript dan mysql sebagai database.
+					Pada website ini terdapat dasboard admin yang digunakan untuk 
+					mengelola data seperti mendaftarkan,menghapus,edit,dan membuat laporan dalam bentuk document seperti microsoft word dan excel.
+				Pada halaman utama ditampilkan sebuah data pendaki yang sudah di daftarkan dan sebuah halaman peta lokasi alat IoT berupa LoRa dan RFID Reader.Peta pada 
+			website ini menggunakan peta opensource dari OpenStreetMap. </p><a style="color:aliceblue" href="https://github.com/Mhidate/Checkpoint" target="_blank">Link app</a>
+			</div>
+            <br>
+			<div class="project">
+				<h3>App 2</h3>
+				<p>masih proses</p>
+			</div>
+		</section>
+	</main>
+    <br>
+
+	<div class="container" id="myForm">
+		<label>Alamat email kami</label>
+		<div class="row">
+		  <div class="col-25">
+			<input type="text" value="ayot427@gmail.com" id="myInput"></input>
+		  </div>
+		</div>
+		<div class="row>">
+			<button type="button" class="btn" onclick="myFunction()">Copy alamat email</button>
+		</div>
+		<div class="row>">
+			<button type="button" class="close" onclick="closeForm()">Close</button>
+		</div>
+	</div>
+	<br><br><br>
+	
+	<footer>
+		<a href="https://www.linkedin.com/in/muhammad-hidayatullah-81a2a61bb/" target="_blank"><img src="img/linkedin.png" width="30" height="30" class="icon"></a>
+        <a href="https://wa.me/+6285964409335" target="_blank" ><img src="img/whatsapp.png" width="30" height="30" class="icon"></a>
+		<a href="https://github.com/Mhidate" target="_blank"><img src="img/github.png" width="30" height="30" class="icon"></a>
+        <a onclick="openForm()"><img src="img/email.png" width="30" height="30" class="icon"></a>
+		<!-- <p>&copy; 2023 - Portofolio Saya</p> -->
+	</footer>
+
+
+
+</body>
+
+<script>
+	function openForm() {
+	  document.getElementById("myForm").style.display = "block";
+	}
+	
+	function closeForm() {
+	  document.getElementById("myForm").style.display = "none";
+	}
+	</script>
+	<script>
+		function myFunction() {
+		  // Get the text field
+		  var copyText = document.getElementById("myInput");
+		
+		  // Select the text field
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999); // For mobile devices
+		
+		  // Copy the text inside the text field
+		  navigator.clipboard.writeText(copyText.value);
+		  
+		  // Alert the copied text
+		  alert("Copied the text: " + copyText.value);
+		}
+		</script>
+</html>
