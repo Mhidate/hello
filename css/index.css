@@ -16,14 +16,10 @@
   margin: 2%;
 
   }
-  h1,h2{
+  h1,h2,h3{
     color: #d56906;
   }
-  h3{
-    margin-left: 45%;
-    /* background-color: #080640; */
-    color: #d56906;
-  }
+ 
   
   /* Header Styles */
   header {
@@ -63,12 +59,21 @@
     section {
       flex-basis: 48%;
     }
+    h3{
+      margin-left: 0%;
+      
+    }
   
   }
   
   @media screen and (min-width: 992px) {
     section {
       flex-basis: 31%;
+    }
+    h3{
+      margin-left: 45%;
+      /* background-color: #080640; */
+      /* color: #d56906; */
     }
   }
   footer {
@@ -107,6 +112,7 @@
    
   }
   .batas{
+    align-items: center;
     width: 100%;
     background-color: #05032b;
     margin-bottom: 3%;
